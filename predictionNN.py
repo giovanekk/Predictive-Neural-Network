@@ -12,10 +12,10 @@ from sklearn.cluster import KMeans
 
 
 # Get data and clean it
-df23 = pd.read_csv('data/23-24.csv', delimiter=';')
+df23 = pd.read_csv('23-24.csv', delimiter=';')
 #drop last row of df23:
 df23 = df23.drop(df23.index[-1])
-df24 = pd.read_csv('data/24-25.csv', delimiter=';')
+df24 = pd.read_csv('24-25.csv', delimiter=';')
 df = pd.concat([df23, df24])
 df = df.drop(columns=['Pedido','Hora','Representante','Status','Observa��o','Cliente Desde',
                       'Devol','Cidade','UF','numero','numero2','telefone','NF','Method'])
